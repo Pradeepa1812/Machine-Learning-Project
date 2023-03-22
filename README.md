@@ -19,10 +19,15 @@ Sync github with vscode
 
 .gitignore created via github create new file with python template 
 
+
+2)Writing scripts
+
 creating setup.py and requirements.txt file
 setup.py - Responsible for creating ML application as a package
            we can install this package (even deploy in pypi) in our projects and can able to use
            Building our application as a package itself
+
+3)Creating Project Structure
 
 creating  src/ __init__.py ->logger,utils,exception
 creating src/ components -> data_ingestion 
