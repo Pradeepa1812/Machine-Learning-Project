@@ -24,4 +24,11 @@ setup.py - Responsible for creating ML application as a package
            we can install this package (even deploy in pypi) in our projects and can able to use
            Building our application as a package itself
 
-creating  src/ __init__.py
+creating  src/ __init__.py ->logger,utils,exception
+creating src/ components -> data_ingestion 
+                            data_transformation
+                            model_trainer
+creating src/ pipeline   -> train_pipeline
+                            predict_pipeline
+
+components - modules that are going to use in our specific project   

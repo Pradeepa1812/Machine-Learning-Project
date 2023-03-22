@@ -7,9 +7,7 @@ def get_requirements(filename: str)->List[str]:
 
     with open(filename) as file_obj:
         requirements = file_obj.readlines()
-        print('requirements*******',requirements)
         requirements = [req.replace("\n"," ") for req in requirements]
-        print('after requirements*******',requirements)
         if HYPEN_DOT in requirements:
             requirements.remove(HYPEN_DOT)
     return requirements
