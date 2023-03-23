@@ -1,6 +1,6 @@
-##  END to END Machine Learning Project
+##  End to End Machine Learning Project
 <pre>
-1)Setting up github Repository
+1)Setting up github Repository and New Conda environment
 
 Upgrade pip - pip install --upgrade pip
 Create New Environment - 
@@ -37,3 +37,6 @@ creating src/ pipeline   -> train_pipeline
                             predict_pipeline
 
 components - modules that are going to use in our specific project   
+
+4)Student Performace Indicator
+create venv in jupyter - python -m ipykernel install --user --name venv --display-name "venv"
