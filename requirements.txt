@@ -3,5 +3,6 @@ numpy
 seaborn
 catboost
 xgboost
+dill
 
 #-e .
