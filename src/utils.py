@@ -32,7 +32,6 @@ def evaluate_model(X_train,y_train,X_test,y_test,models,param):
         for i in range(len(models)):
 
             model = list(models.values())[i]
-            print(list(models.keys())[i])
             params = param[list(models.keys())[i]]
 
             grid_result = GridSearchCV(model,params,cv=3)

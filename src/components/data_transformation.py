@@ -9,12 +9,10 @@ from sklearn.pipeline import Pipeline
 from sklearn.impute import SimpleImputer
 from dataclasses import dataclass
 from src.utils import save_object
-
+from src.config_entity.config import DataTransformationConfig
 from src.exception import CustomException
 from src.logger import logging
-@dataclass
-class DataTransformationConfig:
-    preprocesser_obj_file_path = os.path.join("artifacts","preprocessor.pkl")
+
 
 class DataTransformation:
     def __init__(self):

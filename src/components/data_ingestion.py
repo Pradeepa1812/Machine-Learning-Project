@@ -3,13 +3,13 @@ import os
 import pandas as pd
 from src.logger import logging
 from src.exception import CustomException
-from src.config_entity import config
+from src.config_entity.config import DataIngestionConfig
 from sklearn.model_selection import train_test_split
 from src.components.data_transformation import DataTransformation,DataTransformationConfig
 from src.components.model_trainer import ModelTrainer,ModelTrainerConfig
 class DataIngestion:
     def __init__(self):
-        self.ingestion_config = config.DataIngestionConfig()
+        self.ingestion_config = DataIngestionConfig()
 
     def initiate_data_ingestion(self):
         '''

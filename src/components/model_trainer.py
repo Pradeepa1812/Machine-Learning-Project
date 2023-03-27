@@ -14,10 +14,8 @@ from src.logger import logging
 from src.exception import CustomException
 from src.utils import evaluate_model, save_object
 from sklearn.metrics import r2_score
+from src.config_entity.config import ModelTrainerConfig
 
-@dataclass
-class ModelTrainerConfig:
-    trained_model_file_path = os.path.join('artifacts','model.pkl')
 
 class ModelTrainer:
     def __init__(self):
